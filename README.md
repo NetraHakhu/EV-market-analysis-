@@ -17,9 +17,7 @@ power_to_weight (Performance metric)
 
 sales_value_proxy (Market valuation potential)
 
-Machine Learning Model: (Add details about your model here—e.g., Price prediction using Random Forest / XGBoost).
 
-Interactive Dashboard: (Add details about your dashboard tool here—e.g., Streamlit / Dash / Power BI).
 📊 Exploratory Data Analysis & Insights
 Price Distribution: Visualized luxury vs. mid-range market segmentation using Seaborn and Matplotlib.
 
