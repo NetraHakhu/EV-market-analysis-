@@ -1,40 +1,34 @@
-⚡ Electric Vehicle (EV) Analytics & Prediction Hub
-An end-to-end data science project featuring comprehensive exploratory data analysis (EDA), feature engineering, a machine learning model, and an interactive dashboard built on a dataset of modern Electric Vehicles.
+# ⚡ Electric Vehicle (EV) Market Analytics & Prediction Hub
 
-🚀 Project Overview
-This repository contains a complete pipeline for analyzing EV specifications, pricing trends, and performance metrics (covering 2,000+ vehicle records across 24 features such as battery capacity, range, charging speed, and autopilot levels).
+A comprehensive, end-to-end data science web application built with **Python**, **Streamlit**, **Pandas**, **Plotly**, and **Scikit-Learn** to analyze electric vehicle market trends and predict vehicle pricing and customer ratings on the fly.
 
-Key Highlights:
-Data Cleaning & Validation: Handled missing values, checked logical duplicates, validated ranges (prices, ratings, warranties), and treated outliers using the Interquartile Range (IQR) method.
+---
 
-Feature Engineering: Created robust analytical features including:
+## 🚀 Features
 
-price_per_mile (Cost efficiency relative to range)
+* **Real-Time KPI Metrics:** High-level executive overview tracking total EV models, average vehicle price, customer satisfaction ratings, and driving ranges.
+* **Interactive Market Exploration:** Dynamic scatter plots comparing battery capacity against driving range, filtered by manufacturer and data parameters.
+* **Machine Learning Price Predictor:** Real-time Random Forest regression model estimating expected vehicle retail pricing based on battery capacity, driving range, and top speed.
+* **Customer Rating Estimator:** Predictive module forecasting anticipated consumer satisfaction based on technical specifications.
 
-range_per_kwh (Battery efficiency)
+---
 
-power_to_weight (Performance metric)
+## 🛠️ Tech Stack
 
-sales_value_proxy (Market valuation potential)
+* **Frontend & Framework:** Streamlit (v1.38+)
+* **Data Processing & Analysis:** Pandas, NumPy
+* **Data Visualization:** Plotly Express
+* **Machine Learning:** Scikit-Learn (Random Forest Regressor)
+* **File Handling:** Openpyxl, Joblib
 
+---
 
-📊 Exploratory Data Analysis & Insights
-Price Distribution: Visualized luxury vs. mid-range market segmentation using Seaborn and Matplotlib.
+## 📂 Project Structure
 
-Efficiency Metrics: Evaluated the correlation between battery capacity (kwh) and driving range (miles).
-
-🛠️ Tech Stack
-Language: Python 3.x
-
-Libraries: Pandas, NumPy, Scikit-Learn, Matplotlib, Seaborn
-
-Dashboard: Streamlit / Plotly
-
-Environment: Google Colab / Jupyter Notebook
-
-💡 Future Enhancements
-Incorporate real-time EV market data scraping.
-
-Deploy the dashboard on Streamlit Community Cloud / Hugging Face Spaces.
-
-Optimize the ML model hyperparameters for better prediction accuracy.
+```text
+dashboard/
+│
+├── app.py                 # Main Streamlit application script
+├── cleaned_ev_data.csv    # Cleaned and processed EV dataset
+├── requirements.txt       # Python package dependencies
+└── README.md              # Project documentation
